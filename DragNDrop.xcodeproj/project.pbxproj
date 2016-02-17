@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		690D5B211A58B5F800654BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D5B201A58B5F800654BFB /* AppDelegate.swift */; };
-		690D5B231A58B5F800654BFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D5B221A58B5F800654BFB /* ViewController.swift */; };
 		690D5B261A58B5F800654BFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 690D5B241A58B5F800654BFB /* Main.storyboard */; };
 		690D5B281A58B5F800654BFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 690D5B271A58B5F800654BFB /* Images.xcassets */; };
 		690D5B2B1A58B5F800654BFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 690D5B291A58B5F800654BFB /* LaunchScreen.xib */; };
 		690D5B371A58B5F800654BFB /* DragNDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690D5B361A58B5F800654BFB /* DragNDropTests.swift */; };
+		E26E7E931C7492EB00911C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26E7E921C7492EB00911C22 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		690D5B1B1A58B5F800654BFB /* DragNDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragNDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		690D5B1F1A58B5F800654BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		690D5B201A58B5F800654BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		690D5B221A58B5F800654BFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		690D5B251A58B5F800654BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		690D5B271A58B5F800654BFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		690D5B2A1A58B5F800654BFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		690D5B301A58B5F800654BFB /* DragNDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragNDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		690D5B351A58B5F800654BFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		690D5B361A58B5F800654BFB /* DragNDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragNDropTests.swift; sourceTree = "<group>"; };
+		E26E7E921C7492EB00911C22 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				690D5B201A58B5F800654BFB /* AppDelegate.swift */,
-				690D5B221A58B5F800654BFB /* ViewController.swift */,
+				E26E7E921C7492EB00911C22 /* ViewController.swift */,
 				690D5B241A58B5F800654BFB /* Main.storyboard */,
 				690D5B271A58B5F800654BFB /* Images.xcassets */,
 				690D5B291A58B5F800654BFB /* LaunchScreen.xib */,
@@ -156,7 +156,8 @@
 		690D5B131A58B5F800654BFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Dan Fairbanks";
 				TargetAttributes = {
 					690D5B1A1A58B5F800654BFB = {
@@ -212,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				690D5B231A58B5F800654BFB /* ViewController.swift in Sources */,
+				E26E7E931C7492EB00911C22 /* ViewController.swift in Sources */,
 				690D5B211A58B5F800654BFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +276,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -340,6 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DragNDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fairbanksdan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,6 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DragNDrop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fairbanksdan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +372,7 @@
 				);
 				INFOPLIST_FILE = DragNDropTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fairbanksdan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragNDrop.app/DragNDrop";
 			};
@@ -383,6 +388,7 @@
 				);
 				INFOPLIST_FILE = DragNDropTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fairbanksdan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DragNDrop.app/DragNDrop";
 			};
@@ -407,6 +413,7 @@
 				690D5B3C1A58B5F800654BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		690D5B3D1A58B5F800654BFB /* Build configuration list for PBXNativeTarget "DragNDropTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				690D5B3F1A58B5F800654BFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
